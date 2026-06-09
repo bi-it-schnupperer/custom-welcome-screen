@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #DAD2C6;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3%;
+}
+
+/* Layout */
+.dashboard {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    max-width: 90%;
+    height: 80vh;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.welcome-card {
+    flex: 2;
+}
+
+/* Shared card styling */
+.card {
+    border-radius: 1.5rem;
+    padding: 3%;
+    color: white;
+
+    box-shadow:
+        0 0.3rem 0.6rem rgba(0, 0, 0, 0.18),
+        0 0.8rem 1.5rem rgba(0, 0, 0, 0.22),
+        0 1.5rem 3rem rgba(0, 0, 0, 0.18);
+}
+
+/* Left cards */
+.small-card {
+    flex: 1;
+    background: #546077;
+}
+
+.small-card h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.85;
+    margin-bottom: 4%;
+}
+
+.small-card .highlight {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.small-card p,
+.small-card li {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.small-card ul {
+    list-style: none;
+}
+
+/* Welcome card */
+.welcome-card {
+    background: linear-gradient(
+        135deg,
+        #7ed1f0,
+        #39B0DA
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+
+    padding: 5%;
+
+    /* Needed for positioning the image */
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-card h1 {
+    font-size: 4rem;
+    margin-bottom: 2%;
+}
+
+.welcome-card h2 {
+    color: #546077;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 6%;
+    opacity: 0.95;
+}
+
+.welcome-card p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 70%;
+    line-height: 1.6;
+}
+
+/* Bottom-right image */
+.welcome-logo {
+    position: absolute;
+
+    bottom: -5%;
+    right: -2%;
+
+    width: 32%;
+    max-width: 420px;
+    min-width: 140px;
+    height: auto;
+
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .dashboard {
+        flex-direction: column;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        gap: 1rem;
+    }
+
+    .small-card {
+        min-height: 12vh;
+    }
+
+    .welcome-card {
+        min-height: 40vh;
+    }
+
+    .welcome-card h1 {
+        font-size: 3rem;
+    }
+
+    .welcome-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-card p {
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+    .welcome-logo {
+        width: 100px;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
