@@ -1,61 +1,110 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Willkommen</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en">
+<title>Welcomescreen Espas</title>
+<script src=""></script>
 <body>
+<style>
+    body{
+        background-color: rgb(47, 62, 70);
+        color: rgb(255, 255, 255);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .main{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
 
-    <div class="dashboard">
+        height: 50%;
+        width: 100%;
+        margin: 5px;
+        padding: 2px ;
 
-        <div class="sidebar">
+    }
+    .items{
+        border-radius: 8px;
+        border-style: solid;
+        border-color: rgb(82, 121, 111);
+        border-width: 5px;
 
-            <div class="card small-card">
-                <h3>Götti</h3>
-                <p class="highlight">Joel Kuhn</p>
-              
+        background-color: rgb(132, 169, 140);
+        justify-content: space-around;
+        width: 720px;
+        height: 950px;
+
+    }
+    .item{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+        border-radius: 8px;
+        border-style: solid;
+        border-color: rgb(166, 187, 153);
+        border-width: 5px;
+
+        font-size: 25px;
+
+        background-color: rgb(202, 210, 197);
+        margin: 50px;
+        padding: 10px;
+        height: 150px;
+        width: 600px;
+    }
+    .welcome{
+        font-size: 25px;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: rgb(82, 121, 111);
+        border-width: 5px;
+        background-color: rgb(132, 169, 140); 
+        text-align: center;
+        margin: 50px;
+        padding: 100px 100px;
+        width: 650px;
+        height: 650px;
+        align-self: flex-end;
+    }
+    .welcome h1 {
+        margin-top: 100px;
+    }
+    .welcome h3{
+           margin-top: 50px;
+    }
+
+    .item h1{
+        margin: auto auto;
+    }
+    .item h3{
+        margin: auto auto;
+        text-indent: 5px;
+    }
+</style>
+<div class="main">
+        <div class="items">
+            <div class="item">
+                <h1>08:00 Uhr</h1>
+                <h3>Begrüssung & Rundgang durch das Gebäude</h3>
             </div>
-
-            <div class="card small-card">
-                <h3>Arbeitstage</h3>
-                <p class="highlight">Mo. bis Mi.</p>
+            <div class="item">
+                <h1>09:30 Uhr</h1>
+                <h3>Einführung in unsere internen Systeme</h3>
             </div>
-
-            <div class="card small-card">
-                <h3>Arbeitszeit</h3>
-                <p class="highlight">08:00 - 15:00</p>
+            <div class="item">
+                <h1>12:00 Uhr</h1>
+                <h3>Gemeinsames Mittagessen im Team</h3>
             </div>
-
-            <div class="card small-card">
-                <h3>Pausen</h3>
-                <ul>
-                    <li>- Morgen: 10:00 - 10:15</li>
-                    <li>- Mittag: 11:55 - 13:00</li>
-                </ul>
+            <div class="item">
+                <h1>15:00 Uhr</h1>
+                <h3>Feedbackgespräch & Abschluss des Tages</h3>
             </div>
-
         </div>
-
-        <div class="card welcome-card">
-            <h1>Willkommen</h1>
-            <h2>Neil Otter</h2>
-
-            <p>
-                Schön, dass du heute als <strong>Schnupperer</strong>
-                bei uns bist.
-            </p>
-
-            <!-- Toro Nikushimi was here -->
-            <img
-                src="Assets/Black-Rose-of-Clan-Tenha.png"
-                alt="Black Rose of Clan Tenha"
-                class="welcome-logo">
+    <div class="welcome">
+        <div class="content">
+            <h1>Herzlich Willkommen in der ESPAS</h1>
+            <h1>Saajagan Sivaneswaravel</h1>
+            <h3>Schön, dass du heute als Schnupperer bei uns bist :) </h3>
         </div>
-        
-
     </div>
-
+</div>
 </body>
 </html>
